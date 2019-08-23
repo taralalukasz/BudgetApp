@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Budget app</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="css//main2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+   <div class="container">
+        <header>
+            <h1>Budget app</h1>
+        </header>
+        <div class="row">
+            <!-- FORM TO ENTER BUDGET -->
+            <div class="col-md-5">
+                <div class="budget-feedback alert-message">BUDGET FEEDBACK</div>
+                <div class="budget-form">
+                    <h5>Please enter your budget</h5>
+                    <form id="budget-form">
+                        <div class="form-group">
+                            <input type="number" id="budget-input">
+                        </div>
+                        <button type="submit" id="submit-budget">Calculate</button>
+                    </form>
+                </div>
+            </div>
+        
+            <div class="app-info col-md-7">
+                <div class="row">
+
+                    <!-- CLASS INFO -->
+                    <div class="budget-info-tab col-xs-4">
+                        <div class="info-tab">
+                            <h5>BUDGET</h5>
+                            <img src="img/dollarNote.jpg" alt="dolar note">
+                            <h4 class="show-green"><span>$</span> <span id="budget-amount">0</span></h4>
+                        </div>
+                    </div>
+        
+                    <div class="budget-info-tab col-xs-4">
+                        <div class="info-tab">
+                                <h5>EXPENSES</h5>
+                            <img src="img/card.jpg" alt="card">
+                            <h4 class="show-red"><span>$</span> <span id="expense-amount">0</span></h4>
+                        </div>
+                    </div>
+        
+                    <div class="budget-info-tab col-xs-4">
+                        <div class="info-tab">
+                            <h5>BALANCE</h5>
+                            <img src="img/dollar.jpg" alt="dolar sign">
+                            <h4 id="balance" class="show-black"><span>$</span> <span id="balance-amount">0</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-5">
+                <div class="expense-feedback alert-message">EXPENSE FEEDBACK</div>
+                <div class="expense-form">
+                    <form id="expense-form">
+                        <h5>Please enter Your Expense</h5>
+                        <div>
+                            <input type="text" id="expense-input">
+                        </div>
+                        <h5>Please Enter Expense Amount</h5>
+                        <div>
+                            <input type="number" id="amount-input">
+                        </div>
+                        <button type="submit" id="expense-submit">Add Expense</button>
+                    </form>
+                </div>
+            </div>
+            <div class="summary col-md-7">
+                <div class="row">
+                    <div class="summary col-xs-4">
+                        <p>Expense Title</p>
+                    </div>
+                    <div class="summary col-xs-4">
+                        <p>Expense Value</p>
+                    </div>
+                </div>
+                <div id="expense-list">
+
+                </div>
+
+            </div>
+        </div>
+   </div>
+    <script src="js/app.js"></script>
+</body>
+    
+</html>

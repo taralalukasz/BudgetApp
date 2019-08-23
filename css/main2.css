@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+
+* {
+    margin-left: 0px;
+	padding :0;
+	box-sizing :border-box;
+}
+
+body {
+    background: red;
+}
+
+header > h1 {
+    font-family: 'PT Serif', serif;
+}
+
+h5 {
+    font-family: 'PT Serif', serif;
+    font-size: 15px ;
+}
+
+.budget-form {
+    border : solid 2px green;
+    padding : 10px 10px;
+    border-radius: 5px;
+    margin: 30px 0;
+}
+
+.budget-info-tab {
+    text-align: center;
+}
+
+.info-tab {
+    margin: 0 auto;
+    width: 150px;
+    font-family: 'PT Serif', serif;
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+.expense-form {
+    border : solid 2px red;
+    padding : 10px 10px;
+    border-radius: 5px;
+    margin: 30px 0;
+}
+
+#budget-input {
+    width : 100%;
+    border : 2px solid green;
+    border-radius: 5px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+#submit-budget {
+    border : 2px solid green;
+    border-radius: 5px;
+    background-color : whitesmoke;
+    font-family: 'PT Serif', serif;
+    color : green;
+    width : 100px;
+    height: 40px;
+}
+
+#expense-input {
+    width : 100%;
+    border : 2px solid red;
+    border-radius: 5px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+#amount-input {
+    width : 100%;
+    border : 2px solid red;
+    border-radius: 5px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+#expense-submit {
+    border : 2px solid red;
+    border-radius: 5px;
+    background-color : whitesmoke;
+    font-family: 'PT Serif', serif;
+    color : red;
+    width : 100px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.summary {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.budget-feedback, .expense-feedback {
+    display: none;
+}
+
+.alert-message {
+    border: solid 2px red;
+    background-color: lightcoral;
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.show-alert {
+    display: block;
+}
+
+.show-green {
+    color: green;
+}
+
+.show-red {
+    color: red;
+}
+
+.show-black {
+    color: black;
+}
